@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   test:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
         uses: actions/chechout@v4
         name: run a test
