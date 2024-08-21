@@ -37,6 +37,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-        uses: actions/chechout@v4
+      - uses: actions/chechout@v4
       - name: run as test
         run: echo "Github actions"  
