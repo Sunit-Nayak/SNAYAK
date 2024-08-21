@@ -39,5 +39,5 @@ jobs:
     steps:
         uses: actions/chechout@v4
         name: run a test
-        run: echo"Github actions""  
+        run: echo"Github actions"  
 
