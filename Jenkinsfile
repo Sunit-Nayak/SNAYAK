@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('Fetch Master/Slave Details') {
             steps {
+                sh '''
+                bash | $ {WORKSPACE}/jenkins
                 script {
                     // Get Jenkins instance (master node)
                     def master = Jenkins.instance
@@ -30,7 +32,7 @@ pipeline {
                         echo "  Availability: ${slave.getComputer().isOffline() ? 'Offline' : 'Online'}"
                     }
                 }
-            }
+            '''}
         }
     }
 }
