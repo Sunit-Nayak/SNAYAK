@@ -10,7 +10,7 @@ pipeline {
                     // Get Jenkins instance (master node)
                     def master = Jenkins.instance
 
-                    // Print master node details
+                    // Print masnode details
                     echo "Master Node:"
                     echo "  Name: ${master.displayName}"
                     echo "  Description: ${master.getNodeDescription()}"
